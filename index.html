@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7faf6">
+  <meta name="description" content="سفرینو؛ مقصدهای تازه، تجربه‌های خاص و شروع یک ماجراجویی جدید.">
+  <title>سفرینو | دنیای سفرهای تو</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-plane" viewBox="0 0 24 24">
+      <path d="M2 16.5 9 13 4 5.5l2-.5 8 6 5-2.5c1.7-.8 3 .8 1.4 2L7 20l-1.5-.5 4-4.5-5 2z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-train" viewBox="0 0 24 24">
+      <rect x="5" y="2" width="14" height="17" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M5 11h14M8 22l4-4 4 4M8 6h2m4 0h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="8.5" cy="14.5" r="1" fill="currentColor"/><circle cx="15.5" cy="14.5" r="1" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24">
+      <rect x="4" y="3" width="16" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M4 10h16M7 6h3m4 0h3M7 20v2m10-2v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="8" cy="15" r="1.2" fill="currentColor"/><circle cx="16" cy="15" r="1.2" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24">
+      <path d="M3 19V5m0 10h18v4M3 10h5a3 3 0 0 1 3 3v2m0-3h7a3 3 0 0 1 3 3v0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24">
+      <circle cx="10.8" cy="10.8" r="6.8" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="m16 16 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+    </symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M7 3v4m10-4v4M3 10h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-users" viewBox="0 0 24 24">
+      <circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M2.5 20v-2a6.5 6.5 0 0 1 13 0v2M16 5a3.5 3.5 0 0 1 0 6.8m2 2.2a5 5 0 0 1 3.5 4.8V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24">
+      <path d="M20.8 8.8c0 5-8.8 11-8.8 11s-8.8-6-8.8-11A4.8 4.8 0 0 1 12 6a4.8 4.8 0 0 1 8.8 2.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <path d="m12 2 3 6.5 7 .9-5.1 4.9 1.3 7L12 18l-6.2 3.3 1.3-7L2 9.4l7-.9Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24">
+      <path d="m12 2 2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="m8 12 2.5 2.5L16 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="brand" aria-label="صفحه اصلی سفرینو">
+        <span class="brand-mark">
+          <svg><use href="#i-plane"/></svg>
+        </span>
+        <span class="brand-name">سفرینو<span>.</span><small>دنیای سفرهای تو</small></span>
+      </a>
+
+      <button class="icon-button menu-toggle" id="menuToggle" aria-label="باز کردن منو" aria-expanded="false">
+        <svg><use href="#i-menu"/></svg>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#top" class="nav-link active">صفحه اصلی</a>
+        <a href="#booking" class="nav-link" data-type="plane">بلیط سفر</a>
+        <a href="#destinations" class="nav-link">مقصدها</a>
+        <a href="#services" class="nav-link">خدمات ما</a>
+        <a href="#about" class="nav-link">درباره ما</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button favorites-header" id="favoritesButton" aria-label="علاقه‌مندی‌ها">
+          <svg><use href="#i-heart"/></svg><span class="favorite-count">۰</span>
+        </button>
+        <button class="account-button" id="accountButton">ورود / ثبت‌نام <span>↗</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> شروع یک ماجراجویی تازه</div>
+          <h1>دنیا بزرگه،<br> <span class="gradient-text">برو کشفش کن.</span></h1>
+          <p class="hero-description">از شهرهای پرهیاهو تا گوشه‌های دنج طبیعت؛ مقصد بعدی‌ات می‌تونه شروع قشنگ‌ترین خاطره‌ات باشه.</p>
+
+          <div class="hero-actions">
+            <a href="#booking" class="button button-primary">شروع سفر <svg><use href="#i-arrow"/></svg></a>
+            <a href="#destinations" class="button button-light"><span class="play-icon">▶</span> کشف مقصدها</a>
+          </div>
+
+          <div class="hero-proof">
+            <div class="avatar-stack">
+              <span>س</span><span>م</span><span>آ</span><span>+</span>
+            </div>
+            <div><strong>هر سفر، یک داستان</strong><small>داستان بعدی رو تو بساز!</small></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="hero-sun"></div>
+          <div class="hero-cloud cloud-a"></div>
+          <div class="hero-cloud cloud-b"></div>
+
+          <svg class="hero-landscape" viewBox="0 0 620 500" role="img" aria-label="تصویرسازی کوهستان و هواپیمای در حال پرواز">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#d8ffe4"/>
+                <stop offset="100%" stop-color="#a5eec3"/>
+              </linearGradient>
+              <linearGradient id="hill1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#8cdbab"/>
+                <stop offset="100%" stop-color="#46bd7b"/>
+              </linearGradient>
+              <linearGradient id="hill2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3fb978"/>
+                <stop offset="100%" stop-color="#137347"/>
+              </linearGradient>
+            </defs>
+            <rect x="20" y="20" width="580" height="460" rx="32" fill="url(#sky)"/>
+            <circle cx="450" cy="110" r="48" fill="#fff6bd" opacity=".92"/>
+            <path d="M20 320 145 170 245 300 340 155 490 320 600 205V480H20Z" fill="#b0e8bf"/>
+            <path d="m250 300 90-145 78 112-28-8-24 10-29-15-24 12-22-4Z" fill="#f6fff5" opacity=".9"/>
+            <path d="M20 365Q150 235 280 350T600 320V480H20Z" fill="url(#hill1)"/>
+            <path d="M20 420Q150 315 300 405T600 355V480H20Z" fill="url(#hill2)"/>
+            <path d="M285 480Q390 405 470 360T600 330V480Z" fill="#0d5c3a" opacity=".28"/>
+            <g transform="translate(350 200) rotate(-13)">
+              <path d="M-100 8-10 0 40-47Q47-51 47-42L25 0 93 12Q102 15 95 22L24 19 0 62Q-5 69-9 60L-18 19-90 20Q-106 19-100 8Z" fill="#fff" stroke="#12864c" stroke-width="2"/>
+              <path d="m-18 19 14 0-2 24Z" fill="#18ce75"/>
+            </g>
+            <path d="M95 130q20-20 40 0m-20-20q15-15 30 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>
+            <path d="M410 260q20-20 40 0m-20-20q15-15 30 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>
+          </svg>
+
+          <div class="floating-note note-top">
+            <span class="note-icon">✦</span>
+            <div><strong>یه جای تازه</strong><small>یه حس تازه</small></div>
+          </div>
+          <div class="floating-note note-bottom">
+            <span class="note-icon note-icon-green">⌖</span>
+            <div><strong>مقصد بعدی؟</strong><small>انتخاب با توئه!</small></div>
+            <span class="note-arrow">↙</span>
+          </div>
+          <div class="visual-label">TRAVEL MORE · WORRY LESS</div>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>برای خاطره‌هایی که فراموش نمی‌شن</span>
+        <svg><use href="#i-sparkle"/></svg>
+        <span>برای مسیرهایی که هنوز نرفتی</span>
+        <svg><use href="#i-sparkle"/></svg>
+        <span>برای خودِ زندگی</span>
+      </div>
+    </section>
+
+    <section class="booking-section section-wrap" id="booking">
+      <div class="section-title-row">
+        <div>
+          <span class="section-kicker">سفر از همین‌جا شروع می‌شه</span>
+          <h2>مقصدت رو پیدا کن <span class="title-dot">.</span></h2>
+          <p>چند تا انتخاب ساده تا ماجراجویی بعدی‌ات.</p>
+        </div>
+        <span class="title-stamp">LET'S GO! <svg><use href="#i-plane"/></svg></span>
+      </div>
+
+      <div class="booking-panel">
+        <div class="booking-tabs" role="tablist" aria-label="انتخاب سرویس">
+          <button class="booking-tab active" data-type="plane" role="tab" aria-selected="true"><svg><use href="#i-plane"/></svg> هواپیما</button>
+          <button class="booking-tab" data-type="train" role="tab" aria-selected="false"><svg><use href="#i-train"/></svg> قطار</button>
+          <button class="booking-tab" data-type="bus" role="tab" aria-selected="false"><svg><use href="#i-bus"/></svg> اتوبوس</button>
+          <button class="booking-tab" data-type="stay" role="tab" aria-selected="false"><svg><use href="#i-bed"/></svg> اقامتگاه</button>
+        </div>
+
+        <form id="searchForm">
+          <div class="search-fields">
+            <label class="search-field city-field" id="originWrap">
+              <span class="field-caption">از کجا؟</span>
+              <span class="field-input"><svg><use href="#i-pin"/></svg><input id="origin" placeholder="شهر مبدأ" autocomplete="off" required></span>
+            </label>
+
+            <button class="swap-button" id="swapButton" type="button" aria-label="جابه‌جایی مبدأ و مقصد" title="جابه‌جایی مبدأ و مقصد">⇄</button>
+
+            <label class="search-field city-field" id="destinationWrap">
+              <span class="field-caption">کجا بریم؟</span>
+              <span class="field-input"><svg><use href="#i-pin"/></svg><input id="destination" placeholder="شهر مقصد" autocomplete="off" required></span>
+            </label>
+
+            <label class="search-field" id="dateWrap">
+              <span class="field-caption" id="dateCaption">چه روزی؟</span>
+              <span class="field-input"><svg><use href="#i-calendar"/></svg><input type="date" id="travelDate" required></span>
+            </label>
+
+            <label class="search-field" id="returnWrap">
+              <span class="field-caption">برگشت (اختیاری)</span>
+              <span class="field-input"><svg><use href="#i-calendar"/></svg><input type="date" id="returnDate"></span>
+            </label>
+
+            <label class="search-field">
+              <span class="field-caption" id="peopleCaption">چند نفر؟</span>
+              <span class="field-input"><svg><use href="#i-users"/></svg>
+                <select id="people">
+                  <option value="1">۱ نفر</option><option value="2" selected>۲ نفر</option>
+                  <option value="3">۳ نفر</option><option value="4">۴ نفر</option>
+                  <option value="5">۵ نفر</option><option value="6">۶ نفر</option>
+                </select>
+              </span>
+            </label>
+          </div>
+          <div class="search-footer">
+            <p id="searchHint"><span class="hint-dot"></span> اطلاعات رو وارد کن و مقصدت رو پیدا کن.</p>
+            <button type="submit" class="button button-primary search-submit"><svg><use href="#i-search"/></svg> جستجوی سفر <span>←</span></button>
+          </div>
+        </form>
+      </div>
+      <div class="search-results" id="searchResults" hidden></div>
+    </section>
+
+    <section class="destinations-section section-wrap" id="destinations">
+      <div class="section-title-row">
+        <div>
+          <span class="section-kicker">الهام بگیر، راه بیفت</span>
+          <h2>مقصدهایی که دل می‌برن <span class="title-dot">.</span></h2>
+          <p>شاید سفر بعدی‌ات همین‌جا منتظرته.</p>
+        </div>
+        <button class="text-link" id="showAllDestinations">دیدن همه مقصدها <svg><use href="#i-arrow"/></svg></button>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card destination-large">
+          <img src="img/images (2).jfif" alt="بافت تاریخی و کوچه‌های زیبای شیراز" loading="lazy">
+          <div class="destination-overlay"></div>
+          <span class="destination-tag">حال‌وهوای تاریخی</span>
+          <button class="favorite-toggle" data-favorite="shirāz" aria-label="افزودن شیراز به علاقه‌مندی‌ها"><svg><use href="#i-heart"/></svg></button>
+          <div class="destination-info"><span>فارس، ایران</span><h3>شیراز</h3><p>شهر شعر، باغ و حال خوب.</p><button class="destination-explore" data-city="شیراز">کشف این مقصد <span>←</span></button></div>
+        </article>
+
+        <article class="destination-card">
+          <img src="img/images (2).jfif" alt="طبیعت سرسبز و مه‌آلود" loading="lazy">
+          <div class="destination-overlay"></div>
+          <span class="destination-tag">فرار به طبیعت</span>
+          <button class="favorite-toggle" data-favorite="rasht" aria-label="افزودن رشت به علاقه‌مندی‌ها"><svg><use href="#i-heart"/></svg></button>
+          <div class="destination-info"><span>گیلان، ایران</span><h3>رشت</h3><p>سبزی، باران و طعم زندگی.</p><button class="destination-explore" data-city="رشت">کشف این مقصد <span>←</span></button></div>
+        </article>
+
+        <article class="destination-card">
+          <img src="img/images (1).jfif" alt="هتل زیبا با چشم‌انداز کوهستان" loading="lazy">
+          <div class="destination-overlay"></div>
+          <span class="destination-tag">آرامش و استراحت</span>
+          <button class="favorite-toggle" data-favorite="kish" aria-label="افزودن کیش به علاقه‌مندی‌ها"><svg><use href="#i-heart"/></svg></button>
+          <div class="destination-info"><span>خلیج فارس، ایران</span><h3>کیش</h3><p>دریا، آفتاب و روزهای آزاد.</p><button class="destination-explore" data-city="کیش">کشف این مقصد <span>←</span></button></div>
+        </article>
+
+        <article class="destination-card">
+          <img src="img/kish.jpg" alt="قله کوهستان زیر آسمان پرستاره" loading="lazy">
+          <div class="destination-overlay"></div>
+          <span class="destination-tag">ماجراجویی</span>
+          <button class="favorite-toggle" data-favorite="tabriz" aria-label="افزودن تبریز به علاقه‌مندی‌ها"><svg><use href="#i-heart"/></svg></button>
+          <div class="destination-info"><span>آذربایجان شرقی، ایران</span><h3>تبریز</h3><p>فرهنگ، تاریخ و تجربه‌های نو.</p><button class="destination-explore" data-city="تبریز">کشف این مقصد <span>←</span></button></div>
+        </article>
+
+        <article class="destination-card destination-wide">
+          <img src="img/images (3).jfif" alt="طبیعت وسیع و منظره آرامش‌بخش" loading="lazy">
+          <div class="destination-overlay"></div>
+          <span class="destination-tag">یه تجربه متفاوت</span>
+          <button class="favorite-toggle" data-favorite="nature" aria-label="افزودن طبیعت به علاقه‌مندی‌ها"><svg><use href="#i-heart"/></svg></button>
+          <div class="destination-info"><span>مسیرت رو خودت انتخاب کن</span><h3>طبیعت‌گردی</h3><p>گاهی بهترین مقصد، جاییه که هنوز نمی‌شناسیش.</p><button class="destination-explore" data-city="طبیعت">کشف این مقصد <span>←</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-decoration quote-decoration-one">“</div>
+      <div class="quote-content">
+        <span class="section-kicker">یه یادآوری کوچیک</span>
+        <h2>بعضی از بهترین لحظه‌های زندگی،<br><span>توی مسیر اتفاق می‌افتن.</span></h2>
+        <p>لازم نیست همه‌چیز کامل باشه؛ فقط کافیه قدم اول رو برداری.</p>
+        <a href="#booking" class="button button-dark">مسیرت رو پیدا کن <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <svg class="quote-art" viewBox="0 0 340 270" aria-hidden="true">
+        <circle cx="170" cy="135" r="115" fill="#d5ffe2"/>
+        <circle cx="170" cy="135" r="88" fill="none" stroke="#7edba5" stroke-width="1.5" stroke-dasharray="4 7"/>
+        <path d="M30 205 115 90 165 158 214 70 310 205Z" fill="#70ce92"/>
+        <path d="m115 90 30 40-22-5-8 12-15-20Z" fill="#f6fff5"/>
+        <path d="M30 220Q125 170 190 205T310 180V260H30Z" fill="#198650"/>
+        <path d="M70 225q70-80 140-75" fill="none" stroke="#d7ffe4" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 10"/>
+        <g transform="translate(180 100) rotate(-18)">
+          <path d="M-38 4-8 0 14-23Q18-26 18-19L8 0 37 5Q42 7 37 11L7 10-2 28Q-5 32-7 27L-11 10-37 11Q-44 10-38 4Z" fill="#fff" stroke="#0c8548" stroke-width="1.5"/>
+        </g>
+      </svg>
+    </section>
+
+    <section class="services-section section-wrap" id="services">
+      <div class="section-title-row">
+        <div>
+          <span class="section-kicker">هر چیزی برای شروع</span>
+          <h2>همراهت هستیم <span class="title-dot">.</span></h2>
+          <p>از انتخاب مسیر تا برنامه‌ریزی برای یه سفر خاطره‌انگیز.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <button class="service-item" data-type="plane">
+          <span class="service-icon icon-plane"><svg><use href="#i-plane"/></svg></span>
+          <span class="service-item-title">سفر هوایی</span>
+          <span class="service-item-description">مسیرهای هوایی رو بررسی کن و برای سفر بعدی برنامه بریز.</span>
+          <span class="service-item-link">جستجوی پرواز <svg><use href="#i-arrow"/></svg></span>
+        </button>
+        <button class="service-item" data-type="train">
+          <span class="service-icon icon-train"><svg><use href="#i-train"/></svg></span>
+          <span class="service-item-title">سفر ریلی</span>
+          <span class="service-item-description">از پنجره قطار، مسیر و منظره‌ها رو جور دیگه‌ای ببین.</span>
+          <span class="service-item-link">جستجوی قطار <svg><use href="#i-arrow"/></svg></span>
+        </button>
+        <button class="service-item" data-type="bus">
+          <span class="service-icon icon-bus"><svg><use href="#i-bus"/></svg></span>
+          <span class="service-item-title">سفر جاده‌ای</span>
+          <span class="service-item-description">مقصدت رو انتخاب کن و برای یک ماجراجویی تازه آماده شو.</span>
+          <span class="service-item-link">جستجوی اتوبوس <svg><use href="#i-arrow"/></svg></span>
+        </button>
+        <button class="service-item" data-type="stay">
+          <span class="service-icon icon-stay"><svg><use href="#i-bed"/></svg></span>
+          <span class="service-item-title">اقامتگاه</span>
+          <span class="service-item-description">برای استراحت، یک جای دنج و مناسب برای خودت پیدا کن.</span>
+          <span class="service-item-link">برنامه اقامت <svg><use href="#i-arrow"/></svg></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="benefits-section" id="about">
+      <div class="benefits-inner">
+        <div class="benefits-copy">
+          <span class="section-kicker">چرا سفرینو؟</span>
+          <h2>سفر باید ساده باشه،<br><span>نه پر از دردسر.</span></h2>
+          <p>هدف سفرینو اینه که انتخاب مقصد و برنامه‌ریزی سفر، به‌جای یک کار سخت، بخشی از لذت ماجراجویی باشه.</p>
+          <ul class="benefit-list">
+            <li><span><svg><use href="#i-check"/></svg></span><div><strong>انتخاب راحت‌تر</strong><small>گزینه‌ها رو مرتب و قابل‌فهم ببین.</small></div></li>
+            <li><span><svg><use href="#i-check"/></svg></span><div><strong>طراحی ساده و دلنشین</strong><small>بدون شلوغی اضافه، روی سفرت تمرکز کن.</small></div></li>
+            <li><span><svg><use href="#i-check"/></svg></span><div><strong>همه‌چیز در یک‌جا</strong><small>ایده‌ها و بخش‌های سفر رو کنار هم داشته باش.</small></div></li>
+          </ul>
+          <a href="#booking" class="button button-primary">شروع برنامه‌ریزی <svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="benefits-visual">
+          <div class="benefit-circle"></div>
+          <div class="benefit-image">
+            <img src="img/images (1).jfif"دریاچه و کوهستان زیبا در یک مقصد گردشگری" loading="lazy">
+          </div>
+          <div class="benefit-bubble bubble-top"><span>✦</span><div><strong>یه نفس عمیق</strong><small>از شلوغی فاصله بگیر</small></div></div>
+          <div class="benefit-bubble bubble-bottom"><span>♡</span><div><strong>خاطره‌های تازه</strong><small>هر مقصد یک داستانه</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section section-wrap">
+      <div class="newsletter-box">
+        <div class="newsletter-decoration"><svg><use href="#i-plane"/></svg></div>
+        <div class="newsletter-copy">
+          <span class="section-kicker">یه خبر خوب در راهه</span>
+          <h2>ایده‌های تازه سفر رو از دست نده.</h2>
+          <p>ایمیلت رو وارد کن تا این فرم نمایشی، ثبت علاقه‌مندی به خبرنامه رو بهت نشون بده.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <label class="visually-hidden" for="newsletterEmail">ایمیل</label>
+          <input id="newsletterEmail" type="email" placeholder="ایمیل تو..." required>
+          <button type="submit">عضویت <span>←</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-about">
+        <a href="#top" class="brand footer-brand">
+          <span class="brand-mark"><svg><use href="#i-plane"/></svg></span>
+          <span class="brand-name">سفرینو<span>.</span><small>دنیای سفرهای تو</small></span>
+        </a>
+        <p>برای روزهایی که دلت یه جای تازه می‌خواد؛ برای خاطره‌هایی که هنوز ساخته نشدن.</p>
+        <div class="social-links">
+          <a href="#top" aria-label="شبکه اجتماعی یک">ig</a>
+          <a href="#top" aria-label="شبکه اجتماعی دو">in</a>
+          <a href="#top" aria-label="شبکه اجتماعی سه">tg</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>دسترسی سریع</h3>
+        <a href="#booking">جستجوی سفر</a>
+        <a href="#destinations">مقصدهای محبوب</a>
+        <a href="#services">خدمات</a>
+        <a href="#about">درباره سفرینو</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>راهنمای سفر</h3>
+        <a href="#destinations">پیدا کردن مقصد</a>
+        <a href="#booking">برنامه‌ریزی سفر</a>
+        <a href="#services">انتخاب وسیله سفر</a>
+        <button id="footerHelp">راهنما و پرسش‌ها</button>
+      </div>
+
+      <div class="footer-column footer-contact">
+        <h3>همراه تو هستیم</h3>
+        <p><span>✉</span> پشتیبانی آنلاین (نمایشی)</p>
+        <p><span>⌖</span> سفر از همین‌جا شروع می‌شه</p>
+        <button class="footer-contact-button" id="contactButton">ارتباط با ما ↗</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© ۲۰۲۶ سفرینو. تمامی حقوق محفوظ است.</span>
+      <span class="footer-demo"><span></span> نسخه نمایشی وب‌سایت</span>
+      <a href="#top">بازگشت به بالا ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="modal" id="infoModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="بستن"><svg><use href="#i-close"/></svg></button>
+      <span class="modal-symbol">✦</span>
+      <h2 id="modalTitle">سفرینو</h2>
+      <div id="modalBody"></div>
+      <button class="button button-primary modal-action" id="modalAction">متوجه شدم</button>
+    </div>
+  </dialog>
+
+</body>
+</html>
